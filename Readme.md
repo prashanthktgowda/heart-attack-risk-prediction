@@ -183,8 +183,7 @@ The system predicts the heart attack risk level based on the input retinal image
 ![Cluster Image Output](https://github.com/user-attachments/assets/cab5c7f0-75ab-44be-9453-e518a9a87e84)<!-- Replace with actual path -->
 ![High Risk Output](https://github.com/user-attachments/assets/4d18c5a5-3d34-46e4-9412-7f97b1ef0341)<!-- Replace with actual path -->
 ![No Risk Output](https://github.com/user-attachments/assets/d8493754-8c78-40b1-ae9b-f2fd9743c2b3)<!-- Replace with actual path -->
-![Feature Graph](![image](https://github.com/user-attachments/assets/418467d4-59f3-4125-a38e-d26bd6cf3c16)
-) <!-- Replace with actual path -->
+![Feature Graph](https://github.com/user-attachments/assets/971eb3d1-2997-4dc5-a7ed-f8377f8a0565)<!-- Replace with actual path -->
 
 *Reported Accuracy: The report mentions visualizations aiming for high accuracy (e.g., 98% target mentioned contextually on page 56), but formal validation metrics should be checked via the evaluation script.*
 
