@@ -1,0 +1,5 @@
+venv/lib/python3.12/site-packages/tensorflow/libtensorflow_framework.so.2 filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.12/site-packages/tensorflow/libtensorflow_cc.so.2 filter=lfs diff=lfs merge=lfs -text
+venv/** filter=lfs diff=lfs merge=lfs -text
+*.pb filter=lfs diff=lfs merge=lfs -text
+static/images/* filter=lfs diff=lfs merge=lfs -text

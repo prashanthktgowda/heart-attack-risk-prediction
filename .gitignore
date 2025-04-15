@@ -1,0 +1,9 @@
+venv/
+venv/
+
+# Ignore large files
+*.log
+*.tmp
+*.bak
+*.pb
+# Add other patterns as needed

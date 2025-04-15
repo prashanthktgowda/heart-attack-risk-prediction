@@ -1,0 +1,216 @@
+{% extends "base.html" %} {% block content %}
+
+<center><h2>Heart Attack Classifier</h2>
+<style> .footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #2dcba7;
+   color: black;
+   text-align: center;
+   font-size: 25px;
+   font-weight: bold;
+}</style>
+
+<div>
+   <center> <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label for="imageUpload" class="upload-label">
+            Choose Image...
+        </label>
+        <center> <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Check Deficiency</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+<!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row gy-4 d-flex">
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <i class="bi bi-binoculars color-cyan"></i>
+              <h4>Age</h4>
+            </a>
+          </li><!-- End Tab 1 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <i class="bi bi-box-seam color-indigo"></i>
+              <h4>Systolic Blood Pressure</h4>
+            </a>
+          </li><!-- End Tab 2 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <i class="bi bi-brightness-high color-teal"></i>
+              <h4>Diastolic Blood Pressure</h4>
+            </a>
+          </li><!-- End Tab 3 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <i class="bi bi-command color-red"></i>
+              <h4>Body Mass Index</h4>
+            </a>
+          </li><!-- End Tab 4 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+              <i class="bi bi-easel color-blue"></i>
+              <h4>Hemoglobin A1C</h4>
+            </a>
+          </li><!-- End Tab 5 Nav -->
+
+          <li class="nav-item col-6 col-md-4 col-lg-2">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-6">
+              <i class="bi bi-map color-orange"></i>
+              <h4>Heart Attack Risk</h4>
+            </a>
+          </li><!-- End Tab 6 Nav -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+                <h3>Age</h3>
+                <p class="fst-italic">
+                  Men age 45 and older and women age 55 and older are more likely to have a heart attack than are younger men and women. But dont celebrate yet because theres one worrisome problem Heart attacks are increasing in young adults under the age of 40 including those in their 20s and 30s. Knowing whats behind the rise in heart attacks in young adults can help you take steps to protect your health and prevent cardiovascular disease.
+                </p>
+                
+
+
+
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="../static/img/features-1.jpg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+          </div><!-- End Tab Content 1 -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Systolic Blood Pressure</h3>
+                <p>
+                  Systolic blood pressure is the top number and refers to the amount of pressure experienced by the arteries while the heart is beating. 
+                </p>
+                <p class="fst-italic">
+                  Systolic blood pressure, the top number, measures the force the heart exerts on the walls of the arteries each time it beats.
+                </p>
+                
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="../static/img/features-2.jpg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+          </div><!-- End Tab Content 2 -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Diastolic Blood Pressure</h3>
+                <p>
+                  Diastolic blood pressure is the bottom number and refers to the amount of pressure in the arteries while the heart is resting in between heartbeats.High diastolic blood pressure is a type of hypertension. Doctors do not know exactly why it happens, but obesity, high triglyceride levels, smoking, and alcohol may all contribute. Medication and lifestyle choices can often help manage it.
+                </p>
+                       </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="../static/img/features-2.jpg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+          </div><!-- End Tab Content 3 -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Body Mass Index</h3>
+                <p>
+                  Body Mass Index (BMI) is a person's weight in kilograms (or pounds) divided by the square of height in meters (or feet). A high BMI can indicate high body fatness. BMI screens for weight categories that may lead to health problems, but it does not diagnose the body fatness or health of an individual.
+                </p>
+                              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="../static/img/features-4.jpg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+          </div><!-- End Tab Content 4 -->
+
+          <div class="tab-pane" id="tab-5">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Hemoglobin A1C</h3>
+                <p>
+                  HbA1c is a blood test that is used to diagnose type 2 diabetes. It is also used to monitor blood glucose control in people with diabetes. HbA1c is short for glycated haemoglobin. The test is also sometimes called haemoglobin A1c. Haemoglobin (Hb) is the protein in red blood cells that carries oxygen through your body.
+                </p>
+                
+              </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="../static/img/features-5.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End Tab Content 5 -->
+
+          <div class="tab-pane" id="tab-6">
+            <div class="row gy-4">
+              <div class="col-lg-8 order-2 order-lg-1">
+                <h3>Heart Attack Risk</h3>
+                <p>
+                  Age. Men age 45 and older and women age 55 and older are more likely to have a heart attack than are younger men and women.
+Tobacco use. 
+High blood pressure. 
+High cholesterol or triglycerides. 
+Obesity. 
+Diabetes. 
+Metabolic syndrome. 
+Family history of heart attacks.
+                </p>
+                        </div>
+              <div class="col-lg-4 order-1 order-lg-2 text-center">
+                <img src="../static/img/features-6.jpg" alt="" class="img-fluid">
+
+              </div>
+            </div>
+          </div><!-- End Tab Content 6 -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+
+
+
+
+
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
+
+{% endblock %}
