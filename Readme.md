@@ -177,13 +177,14 @@ The system predicts the heart attack risk level based on the input retinal image
 
 *(Reference: Figures 8.1 - 8.7 in the report provide visual examples of the UI and outputs.)*
 
-![Homepage](<Your Path To/homepage.png>) <!-- Replace with actual path -->
-![Login Page](<Your Path To/login.png>) <!-- Replace with actual path -->
-![Clustering Input](<Your Path To/clustering_input.png>) <!-- Replace with actual path -->
-![Cluster Image Output](<Your Path To/cluster_output.png>) <!-- Replace with actual path -->
-![High Risk Output](<Your Path To/high_risk.png>) <!-- Replace with actual path -->
-![No Risk Output](<Your Path To/no_risk.png>) <!-- Replace with actual path -->
-![Feature Graph](<Your Path To/feature_graph.png>) <!-- Replace with actual path -->
+![Homepage](https://github.com/user-attachments/assets/b7f879fc-f601-47c9-ae0e-bc1b6291cc4b) <!-- Replace with actual path -->
+![Login Page](https://github.com/user-attachments/assets/bd422b4f-e9e3-4b6f-ab6d-94f399e22040) <!-- Replace with actual path -->
+![Clustering Input](https://github.com/user-attachments/assets/a559dd4c-a34b-4821-b654-406916e55556) <!-- Replace with actual path -->
+![Cluster Image Output](https://github.com/user-attachments/assets/cab5c7f0-75ab-44be-9453-e518a9a87e84)<!-- Replace with actual path -->
+![High Risk Output](https://github.com/user-attachments/assets/4d18c5a5-3d34-46e4-9412-7f97b1ef0341)<!-- Replace with actual path -->
+![No Risk Output](https://github.com/user-attachments/assets/d8493754-8c78-40b1-ae9b-f2fd9743c2b3)<!-- Replace with actual path -->
+![Feature Graph](![image](https://github.com/user-attachments/assets/418467d4-59f3-4125-a38e-d26bd6cf3c16)
+) <!-- Replace with actual path -->
 
 *Reported Accuracy: The report mentions visualizations aiming for high accuracy (e.g., 98% target mentioned contextually on page 56), but formal validation metrics should be checked via the evaluation script.*
 
@@ -219,18 +220,9 @@ The system predicts the heart attack risk level based on the input retinal image
 
 ## Author
 
-*   **PRASHANTHA K T** (U03NM22T006007)
+*   **PRASHANTHA K T** (*************)
     *   B.Tech, Artificial Intelligence and Machine Learning (AIML)
     *   University Visvesvaraya College of Engineering (UVCE), Bangalore University
-
-## Supervisor
-
-*   **DR. SAMYAMA GUNJAL G.H**
-    *   Associate Professor, Dept. of CSE, UVCE
-
-## Acknowledgements
-
-We express our sincere gratitude to Dr. Samyama Gunjal G.H for her invaluable guidance and support throughout this project. We also thank Dr. Thriveni J (Chairperson, Dept. of CSE, UVCE) and the entire faculty of the Department of Computer Science and Engineering at UVCE for providing the opportunity and resources. We acknowledge Bangalore University and UVCE for fostering an environment conducive to research and learning.
 
 ## License
 
